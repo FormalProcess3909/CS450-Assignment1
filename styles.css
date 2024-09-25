@@ -1,0 +1,135 @@
+/* Common styles applicable to all screen sizes */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.main_container {
+    margin-top: 20px;
+}
+
+.first_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    border-bottom: solid gold 5px;
+    padding: 15px 30px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.second_container,
+.third_container,
+.fourth_container,
+.fifth_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    border-bottom: solid gray 1px;
+    line-height: 1.5;
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section_name {
+    font-style: italic;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.section_content {
+    flex: 1;
+    text-align: left;
+}
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.skills_list li {
+    flex-basis: 30%;
+}
+
+.fifth_container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 15px 0;
+}
+
+.fifth_container ul li {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width: 1224px) {
+    .name_job {
+        font-size: 38px;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .section_name {
+        width: 220px;
+        font-size: 25px;
+    }
+
+    .section_content {
+        font-size: 25px;
+    }
+
+    .skills_list li {
+        line-height: 0.5;
+    }
+
+    .fifth_container ul li {
+        font-size: 20px;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1824px) {
+    .name_job {
+        font-size: 48px;
+    }
+
+    .info p {
+        font-size: 25px;
+        padding-right: 25px;
+    }
+
+    .section_name {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    .section_content {
+        font-size: 40px;
+    }
+
+    .skills_list li {
+        line-height: 0.5;
+    }
+
+    .fifth_container ul li {
+        font-size: 40px;
+    }
+}
